@@ -3,18 +3,18 @@
 To install the retail-loop/react, run the following command:
 
 ```javascript
-npm install retail-loop/react
+npm install retailoop/react
 
 # or
 
-yarn add retail-loop/react
+yarn add retailoop/react
 ```
 
 ### - Products
 
 ```typescript
 import { useEffect } from "react";
-import RetailLoop from "retail-loop/react";
+import RetailLoop from "retailoop/react";
 import "./App.css";
 
 const config = {

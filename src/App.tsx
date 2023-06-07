@@ -6,17 +6,17 @@ const config = {
   api_key: "4oIpyNlbHtue7C3L+ImjOqx3BbHHTnWWr8mdcalRYoQ=",
   secret_key: "+MbQkdFiA1aNDelilCa8gKjNSZMoJ00d",
   token:
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJpYXQiOjE2ODYxMTM2ODZ9.YnB_Rud3djvDjfq53mCUyTUPHAanMqv4gdWh_44xJaE",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJpYXQiOjE2ODYxMDc5MTN9.rzYVuTLkCbcyOnAqvuFD0co9Z8RXikKGzyysgFW1134",
 };
 const retailLoop = new RetailLoop(config);
 const { product } = retailLoop;
 
 function App() {
   useEffect(() => {
-    autoCreateProduct();
+    // autoCreateProduct();
     // getProductById();
+    pagination();
     // searchProduct();
-    // pagination();
     // createProduct();
   }, []);
 
@@ -26,17 +26,17 @@ function App() {
   }
 
   async function getProductById() {
-    const res = await product.getProductById("321");
+    const res = await product.getProductById("4");
     console.log(res);
   }
 
   async function searchProduct() {
-    const res = await product.searchProduct("speaker");
+    const res = await product.searchProduct("Computer");
     console.log(res);
   }
 
   async function pagination() {
-    const res = await product.pagination("2");
+    const res = await product.pagination("1");
     console.log(res);
   }
 
@@ -48,14 +48,12 @@ function App() {
     sku_code: "b2244",
     quantity: "10",
     Quantity_type: "limited",
-    price: {
-      currency: "naira",
-      value: "5000",
-    },
-    discount_price: {
-      currency: "naira",
-      value: "5000",
-    },
+    price: 5000,
+    currency: "naira",
+    // discount_price: {
+    //   currency: "naira",
+    //   value: 5000,
+    // },
     images: [
       "https://www.google.com/",
       "https://www.google.com/",

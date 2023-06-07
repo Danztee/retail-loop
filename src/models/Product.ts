@@ -41,13 +41,13 @@ class Product {
   };
 
   getProductById = async (id: string) => {
-    const response = this.#sendRequest("GET", undefined, `/${id}`);
+    const response = this.#sendRequest("GET", undefined, `id=/${id}`);
     return response;
   };
 
   searchProduct = async (search: string) => {
-    const route = "search";
-    const response = this.#sendRequest("GET", route, `&name=${search}`);
+    const route = "search/?";
+    const response = this.#sendRequest("GET", route, `name=${search}`);
     return response;
   };
 

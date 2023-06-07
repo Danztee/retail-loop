@@ -12,7 +12,8 @@ const makeRequest = async (
   try {
     const headers = {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
+      Authorization: `${token}`,
+      "Access-Control-Allow-Origin": "https://app.retailloop.co",
     };
 
     let url = `${endpoint}`;
@@ -21,10 +22,12 @@ const makeRequest = async (
       url += `/${route}`;
     }
 
-    url += `?api_key=${api_key}&secret_key=${secret_key}`;
+    // url += `?api_key=${api_key}&secret_key=${secret_key}`;
 
     if (params?.split("=")[0] === "page") {
-      url = `${endpoint}/${route}?${params}&api_key=${api_key}&secret_key=${secret_key}`;
+      url = `${endpoint}/${route}?${params}`;
+    } else if (params?.split("=")[0] === "id") {
+      url = `${endpoint}${params?.split("=")[1]}`;
     } else if (params) {
       url += `${params}`;
     }

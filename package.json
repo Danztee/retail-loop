@@ -1,8 +1,8 @@
 {
-  "name": "retail-loop",
+  "name": "retailoop",
   "version": "0.0.0",
   "author": "Olowoniyi Daniel <olowoniyidaniel@gmail.com>",
-  "homepage": "https://github.com/Danztee/retail-loop#readme",
+  "homepage": "https://github.com/Danztee/retailoop#readme",
   "license": "MIT",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Danztee/retail-loop.git"
+    "url": "https://github.com/Danztee/retailoop.git"
   },
   "scripts": {
     "dev": "vite",

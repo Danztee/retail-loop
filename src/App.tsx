@@ -3,10 +3,9 @@ import RetailLoop from ".";
 import "./App.css";
 
 const config = {
-  api_key: "4oIpyNlbHtue7C3L+ImjOqx3BbHHTnWWr8mdcalRYoQ=",
-  secret_key: "+MbQkdFiA1aNDelilCa8gKjNSZMoJ00d",
-  token:
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJpYXQiOjE2ODYxMDc5MTN9.rzYVuTLkCbcyOnAqvuFD0co9Z8RXikKGzyysgFW1134",
+  api_key: "",
+  secret_key: "",
+  token: "",
 };
 const retailLoop = new RetailLoop(config);
 const { product } = retailLoop;

@@ -1,6 +1,6 @@
 import Product from "./models/Product";
 
-class RetailLoop {
+class RetaiLoop {
   product: Product;
 
   /**
@@ -15,4 +15,4 @@ class RetailLoop {
   }
 }
 
-export default RetailLoop;
+export default RetaiLoop;

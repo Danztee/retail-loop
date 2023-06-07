@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import RetailLoop from ".";
+import RetaiLoop from ".";
 import "./App.css";
 
 const config = {
@@ -7,8 +7,8 @@ const config = {
   secret_key: "",
   token: "",
 };
-const retailLoop = new RetailLoop(config);
-const { product } = retailLoop;
+const retaiLoop = new RetaiLoop(config);
+const { product } = retaiLoop;
 
 function App() {
   useEffect(() => {
